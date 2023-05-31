@@ -37,7 +37,7 @@ a {
     text-decoration: none;
 } 
 
-.menuStyle a {
+.menuStyle {
     color: cornflowerblue;
     font-size: 16px;
     line-height: 20px;
