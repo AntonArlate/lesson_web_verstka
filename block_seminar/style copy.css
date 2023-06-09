@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #020A18;
+}
+
+
+.header_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) -41.9%, #FFFFFF 260.24%);
+    opacity: 0.02;
+    backdrop-filter: blur(100px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+}
+
+.header_container {
+    max-width: 1146px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 40px;
+    justify-content: center;
+}
+
+.menu_link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    /* #FFFFFF */
+    color: #FFFFFF;
+
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+
+.content_container {
+    max-width: 1146px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 160px;
+
+}
+
+.content_info {
+    margin-right: 128px;
+    width: 604px;
+}
+
+.content_subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    /* identical to box height, or 29px */
+    text-transform: uppercase;
+    color: #3A68B8;
+
+    margin-bottom: 10px;
+}
+
+.content_title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 130%;
+    /* or 71px */
+    color: #FFFFFF;
+
+    margin-bottom: 40px;
+}
+
+.content_description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    /* or 29px */
+    color: #FFFFFF;
+    opacity: 0.7;
+
+    margin-bottom: 50px;
+}
+
+.content_buttons {
+    width: 408px;
+    height: 57px;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.content_button {
+    background: #3A68B8;
+    border-radius: 5px;
+}
+
+.content_button a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    /* #FFFFFF */
+
+    color: #FFFFFF;
+}
+
+a.button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3A68B8;
+    border-radius: 5px;
+    color: #FFFFFF;
+    /* position: relative; */
+    /* Задаем позиционирование подсказано AI*/
+}
+
+/* Эта части подсказана AI зачем не знаю
+a.button::before {
+    content: "";
+    /* Создаем пустой псевдоэлемент 
+    position: absolute;
+    /* Задаем абсолютное позиционирование 
+    top: 10px;
+    /* Задаем отступ сверху 
+    left: 10px;
+    /* Задаем отступ слева 
+    right: 10px;
+    /* Задаем отступ справа 
+    bottom: 10px;
+    /* Задаем отступ снизу 
+    z-index: -1;
+    /* Помещаем под кнопку 
+    background-color: #f2f2f2;
+    /* Задаем цвет фона псевдоэлемента 
+}
+*/
+
+.border {
+    border: 1px solid #249900;
+}
