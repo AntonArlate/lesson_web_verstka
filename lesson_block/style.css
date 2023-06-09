@@ -8,52 +8,107 @@ a {
     text-decoration: none;
 }
 
+
 .top {
     padding-top: 40px;
     padding-bottom: 162px;
+    padding-left: 19.5%;
+    /* 375px от 1920px на макете */
+    padding-right: 19.5%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 533px;
+    justify-content: space-between;
+    /* не найден способ масштабирования или переноса. Т.е. при уменьшении ширины окна уменьшается расстояние между лого и меню. После "слипания" изменения в header больше не происходят */
+}
+
+.company_logo {
+    display: flex;
 }
 
 .company_logo_text {
+    font-family: 'Gilroy-Bold';
+    display: flex;
+    align-items: center;
     font-size: 24px;
-    line-height: 28px;
-    color: #000000;
+
+    margin-left: 14px;
+    color: #000;
     /* не понял как 2 цвета сделать */
+}
+
+.header_menu {
+    font-family: 'Gilroy-SemiBold';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+/* 
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center; */
+
 }
 
 .menu_link {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
+    color: #000;
+}
+
+.menu_link:hover {
     color: #F25822;
-    /* не понял как 2 цвета сделать */
 }
 
 .content {
+    display: flex;
+    flex-wrap: wrap; 
+    /* пока наилучший способ найденый мной кторый позволяет сохранить перенос. Однако так сначала происходит перенос картинки, потом сжимается текст в div блоках*/
     margin-top: 84px;
 }
 
+.content_info{
+    width: 522px;
+    margin-right: 41px;
+}
+
 .content_title {
+    font-family: 'Gilroy-Bold';
     font-size: 60px;
     line-height: 70px;
-    color: #000000;
+    color: #000;
 
-    margin-bottom: 17;
+    margin-bottom: 17px;
 }
 
 .content_sub_title {
+    font-family: 'Gilroy-Medium';
     font-size: 20px;
     line-height: 23px;
-    color: #888888;
+    color: #888;
 
-    margin-bottom: 37;
+    margin-bottom: 37px;
+}
+
+.info_buttons {
+    font-family: 'Gilroy-Bold';
+    display: flex;
+    align-items: center;
+    height: 50px;
 }
 
 .rectangle_button {
     width: 140px;
-    height: 50px;
-
     background: #F25822;
     box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
     border-radius: 50px;
+
+    margin-right: 72px;
 }
 
 /* .button_text {
@@ -70,21 +125,29 @@ a {
 .rectangle_button a {
     display: block;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 16px;
-
     font-size: 15px;
-    line-height: 18px;
-    color: #FFFFFF;
+    line-height: 50px;
+    color: #FFF;
 }
 
 .button_video {
+    display: block;
+    line-height: 50px;
     font-size: 15px;
-    line-height: 18px;
-    color: #AAAAAA;
+    color: #AAA;
 }
 
 .logos {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 48px;
+
     padding-top: 97px;
     padding-bottom: 96px;
+    padding-left: 19.5%;
+    padding-right: 19.5%;
+}
+
+.grid_border {
+    border: 1px solid #000;
 }
