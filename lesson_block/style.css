@@ -45,7 +45,7 @@ a {
     justify-content: space-between;
     align-items: center;
 
-/* 
+    /* 
     display: flex;
     width: 100%;
     height: 100vh;
@@ -65,33 +65,48 @@ a {
     color: #F25822;
 }
 
-.content {
+.home_meta {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     /* пока наилучший способ найденый мной кторый позволяет сохранить перенос. Однако так сначала происходит перенос картинки, потом сжимается текст в div блоках*/
     margin-top: 84px;
 }
 
-.content_info{
-    width: 522px;
-    margin-right: 41px;
-}
-
-.content_title {
+.home_meta h1 {
     font-family: 'Gilroy-Bold';
     font-size: 60px;
     line-height: 70px;
     color: #000;
-
-    margin-bottom: 17px;
 }
 
-.content_sub_title {
+.home_meta h2 {
     font-family: 'Gilroy-Medium';
     font-size: 20px;
     line-height: 23px;
     color: #888;
+}
 
+.content_info {
+    width: 522px;
+    margin-right: 41px;
+}
+
+/* .content_title {
+    font-family: 'Gilroy-Bold';
+    font-size: 60px;
+    line-height: 70px;
+    color: #000;
+} */
+
+/* .content_subtitle {
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 23px;
+    color: #888;
+} */
+
+.home_meta_subtitle {
+    margin-top: 17px;
     margin-bottom: 37px;
 }
 
@@ -150,4 +165,58 @@ a {
 
 .grid_border {
     border: 1px solid #000;
+}
+
+.about_us_bg {
+    background: #FAFAFA;
+    padding-top: 127px;
+    padding-bottom: 124px;
+    padding-left: 19.5%;
+    /* 375px от 1920px на макете */
+    padding-right: 19.5%;
+
+    position: relative;
+}
+
+.about_us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about_text {
+    width: 515px;
+}
+
+.about_text h1 {
+    font-family: 'Gilroy-Bold';
+    font-size: 45px;
+    line-height: 53px;
+
+    color: #000000;
+}
+
+.about_text h2 {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    color: #666666;
+}
+
+.about_subtitle {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.about_img {
+    width: 800px;
+
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.about_us_element {
+    transform: rotate(2.09deg);
 }
