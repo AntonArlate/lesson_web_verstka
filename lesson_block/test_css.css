@@ -1,0 +1,33 @@
+/* TEST start*/
+
+.test_fon {
+    background: #ffbbbb;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 127px;
+    padding-bottom: 124px;
+}
+
+.testcont {
+    width: 79%;
+    display: grid;
+    grid-template-columns: 515px auto;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+/* STEP 2: пытаюсь дать свободу позиционирования картинке position: absolute; относительно контейнера с контентом. Картинка привязывается к 0 сетки но больше никак не изменяет другие элементы*/
+/* STEP 3: Выравниваю картинку по вертикале в центр используя top и transform */
+/* STEP 4: лучшее что смог придумать это добавить фиксированое смещение относительно текстового блока (left: 483px;), взятое из макета */
+.test_img {
+    /* position: absolute; */
+
+    /* top: 50%;
+    transform: translate(0%, -50%); */
+
+    /* left: 483px; */
+}
+
+/* TEST stop */
