@@ -21,171 +21,162 @@
 <body>
 
     <!-- HEADER -->
-    <div class="header">
-        <div class="header_center my_center">
-            <div class="header_left">
-                <img src="./img/logo.svg" width="44px" alt="logo" class="logo">
-                <img src="./img/find_ico.svg" width="26px" alt="find" class="find">
-            </div>
-            <div class="header_right">
-                <img src="./img/menu_ico.svg" width="32px" alt="menu" class="menu">
-                <img src="./img/profile_ico.svg" width="29px" alt="profile" class="profile">
-                <img src="./img/shopping_cart_ico.svg" width="32px" alt="shopping_cart" class="shopping_cart">
-            </div>
+    <div class="header center">
+        <div class="header_left">
+            <img src="./img/logo.svg" alt="logo" class="logo">
+            <img src="./img/find_ico.svg" alt="find" class="find">
+        </div>
+        <div class="header_right">
+            <img src="./img/menu_ico.svg" alt="menu" class="menu">
+            <img src="./img/profile_ico.svg" alt="profile" class="profile">
+            <img src="./img/shopping_cart_ico.svg" alt="shopping_cart" class="shopping_cart">
         </div>
     </div>
 
     <!-- PROMO -->
-    <div class="promo">
-        <div class="promo_center my_center">
-            <!-- картинка у нас должна уменьшаться
+    <div class="promo center">
+        <!-- картинка у нас должна уменьшаться
                 также при увилечении окна должна центрироваться, с учётом того что в макете она у края экрана
                 следовательно нам надо разбить блок promo на 2 других блока картинку и контент
             -->
-            <img src="./img/promo.svg" alt="promo" class="promo_img">
+        <img src="./img/promo.svg" alt="promo" class="promo_img">
 
-            <!-- это второй блок для контента -->
-            <div class="promo_content">
-                <!-- этот блок для позиционирования полоски, хотя в образце решено использованием границы -->
-                <div class="promo_info">
-                    <div class="line_info"></div>
-                    <div class="info_content">
-                        <h1>THE BRAND</h1>
-                        <h2>OF LUXERIOUS FASHION</h2>
-                    </div>
+        <!-- это второй блок для контента -->
+        <div class="promo_content">
+            <!-- этот блок для позиционирования полоски, хотя в образце решено использованием границы -->
+            <div class="promo_info">
+                <div class="line_info"></div>
+                <div class="info_content">
+                    <h1>THE BRAND</h1>
+                    <h2>OF LUXERIOUS FASHION</h2>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- OTHER -->
-    <div class="other">
+    <div class="other center">
         <!-- В макете явно вырисовываеся сетка 3*2 с фиксированным отступом. Пробую реализовать её -->
-        <div class="other_center my_center">
-            <!-- контент состоит из самой картинки, затемняющей заливки и текста -->
-            <div class="other_item border">
-                <img src="./img/for_women.png" alt="for_women" class="other_img">
-                <div class="other_img_filling"></div>
-                <div class="other_content">
-                    <p>30% OFF</p>
-                    <h3>FOR WOMEN</h3>
-                </div>
+        <!-- контент состоит из самой картинки, затемняющей заливки и текста -->
+        <div class="other_item border">
+            <img src="./img/for_women.png" alt="for_women" class="other_img">
+            <div class="other_img_filling"></div>
+            <div class="other_content">
+                <p>30% OFF</p>
+                <h3>FOR WOMEN</h3>
             </div>
-            <div class="other_item border">
-                <img src="./img/for_men.png" alt="for_men" class="other_img">
-                <div class="other_img_filling"></div>
-                <div class="other_content">
-                    <p>30% OFF</p>
-                    <h3>FOR MALE</h3>
-                </div>
+        </div>
+        <div class="other_item border">
+            <img src="./img/for_men.png" alt="for_men" class="other_img">
+            <div class="other_img_filling"></div>
+            <div class="other_content">
+                <p>30% OFF</p>
+                <h3>FOR MALE</h3>
             </div>
-            <div class="other_item border">
-                <img src="./img/for_kids.png" alt="for_kids" class="other_img">
-                <div class="other_img_filling"></div>
-                <div class="other_content">
-                    <p>30% OFF</p>
-                    <h3>FOR KIDS</h3>
-                </div>
+        </div>
+        <div class="other_item border">
+            <img src="./img/for_kids.png" alt="for_kids" class="other_img">
+            <div class="other_img_filling"></div>
+            <div class="other_content">
+                <p>30% OFF</p>
+                <h3>FOR KIDS</h3>
             </div>
-            <div class="other_item other_big_item border">
-                <img src="./img/accesories.png" alt="accesories" class="other_img">
-                <div class="other_img_filling"></div>
-                <div class="other_content">
-                    <p>30% OFF</p>
-                    <h3>ACCESRIES</h3>
-                </div>
+        </div>
+        <div class="other_item other_big_item border">
+            <img src="./img/accesories.png" alt="accesories" class="other_img">
+            <div class="other_img_filling"></div>
+            <div class="other_content">
+                <p>30% OFF</p>
+                <h3>ACCESRIES</h3>
             </div>
         </div>
     </div>
 
     <!-- PRODUCTS -->
-    <div class="products">
-        <div class="poducts_center my_center">
-            <div class="products_title">
-                <h2>Fetured Items</h2>
-                <p>Shop for items based on what we featured in this week</p>
-            </div>
-
-            <div class="product_cards">
-
-                <div class="card">
-                    <!-- <div class="card_background"></div> -->
-                    <img src="./img/cards1.png" alt="" class="card_img">
-                    <div class="card_content">
-                        <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
-                        <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                            of
-                            cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h2 class="card_price">$52.00</h2>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <!-- <div class="card_background"></div> -->
-                    <img src="./img/cards1.png" alt="" class="card_img">
-                    <div class="card_content">
-                        <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
-                        <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                            of
-                            cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h2 class="card_price">$52.00</h2>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <!-- <div class="card_background"></div> -->
-                    <img src="./img/cards1.png" alt="" class="card_img">
-                    <div class="card_content">
-                        <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
-                        <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                            of
-                            cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h2 class="card_price">$52.00</h2>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <!-- <div class="card_background"></div> -->
-                    <img src="./img/cards1.png" alt="" class="card_img">
-                    <div class="card_content">
-                        <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
-                        <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                            of
-                            cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h2 class="card_price">$52.00</h2>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <!-- <div class="card_background"></div> -->
-                    <img src="./img/cards1.png" alt="" class="card_img">
-                    <div class="card_content">
-                        <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
-                        <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                            of
-                            cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h2 class="card_price">$52.00</h2>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <!-- <div class="card_background"></div> -->
-                    <img src="./img/cards1.png" alt="" class="card_img">
-                    <div class="card_content">
-                        <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
-                        <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
-                            of
-                            cool Kym Ellery teams up with Moda Operandi.</p>
-                        <h2 class="card_price">$52.00</h2>
-                    </div>
-                </div>
-
-            </div>
-            <div class="rectangle_button">
-                <a href="#">Browse All Product</a>
-            </div>
+    <div class="products center">
+        <div class="products_title">
+            <h2>Fetured Items</h2>
+            <p>Shop for items based on what we featured in this week</p>
         </div>
 
+        <div class="product_cards">
+
+            <div class="card">
+                <!-- <div class="card_background"></div> -->
+                <img src="./img/cards1.png" alt="" class="card_img">
+                <div class="card_content">
+                    <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
+                    <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h2 class="card_price">$52.00</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- <div class="card_background"></div> -->
+                <img src="./img/cards1.png" alt="" class="card_img">
+                <div class="card_content">
+                    <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
+                    <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h2 class="card_price">$52.00</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- <div class="card_background"></div> -->
+                <img src="./img/cards1.png" alt="" class="card_img">
+                <div class="card_content">
+                    <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
+                    <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h2 class="card_price">$52.00</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- <div class="card_background"></div> -->
+                <img src="./img/cards1.png" alt="" class="card_img">
+                <div class="card_content">
+                    <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
+                    <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h2 class="card_price">$52.00</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- <div class="card_background"></div> -->
+                <img src="./img/cards1.png" alt="" class="card_img">
+                <div class="card_content">
+                    <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
+                    <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h2 class="card_price">$52.00</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- <div class="card_background"></div> -->
+                <img src="./img/cards1.png" alt="" class="card_img">
+                <div class="card_content">
+                    <h1 class="card_title">ELLERY X M'O CAPSULE</h1>
+                    <p class="card_text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi.</p>
+                    <h2 class="card_price">$52.00</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="rectangle_button">
+            <a href="#">Browse All Product</a>
+        </div>
 
     </div>
 

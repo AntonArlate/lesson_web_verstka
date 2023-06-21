@@ -35,14 +35,7 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
 
 .header {
     background: #222;
-    /* Альтернативный вариант центрирования -
-    убираем дополнительный блок -
-    добавляем в параметры -
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px); */
-}
 
-.header_center {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -53,6 +46,8 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
 .header_left {
     padding-top: 18px;
     padding-bottom: 19px;
+    width: 111px;
+    height: 38px;
 
     display: flex;
     align-items: flex-end;
@@ -60,6 +55,11 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
 }
 
 .header_right {
+    padding-top: 28px;
+    padding-bottom: 20px;
+    width: 159px;
+    height: 29px;
+
     display: flex;
     gap: 33px;
     align-items: center
@@ -70,13 +70,8 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
 .promo {
     background: #F1E4E6;
     display: flex;
-}
-
-.promo_center {
     display: flex;
     min-width: 0;
-
-    /* my_center */
 }
 
 .promo_img {
@@ -91,7 +86,7 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
 }
 
 .promo_content {
-    padding-left: 63px;
+    /* padding-left: 63px; */
 
     display: flex;
     align-items: center;
@@ -100,6 +95,7 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
 }
 
 .promo_info {
+    width: 405px;
     display: flex;
 }
 
@@ -131,9 +127,7 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
 .other {
     margin-top: 65px;
     margin-bottom: 96px;
-}
 
-.other_center {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -190,9 +184,7 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
 .products {
     margin-top: 96px;
     margin-bottom: 60px;
-}
 
-.poducts_center {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -209,14 +201,14 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
     text-align: center;
 }
 
-.products h2 {
+.products_title h2 {
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
     color: #222222;
 }
 
-.products p {
+.products_title p {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -301,6 +293,106 @@ Commit: e9cda63a4436b9aa03647472e0b59f67cac95858
     color: #F26376;
 }
 
-@media (max-width: 1024ps) {
-    .my_center {}
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
+    .header {
+        padding: 0 32px;
+    }
+
+    .header_left {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .header_right {
+        padding-top: 19px;
+        padding-bottom: 18px;
+        width: 169px;
+        height: 37px;
+        gap: 0;
+    }
+
+    .header_right .menu {
+        margin-right: 25px;
+    }
+
+    .header_right .profile {
+        margin-right: 42px;
+    }
+
+    .promo_info {
+        width: 311px;
+    }
+
+    .info_content h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .info_content h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .other {
+        margin-top: 64.95px;
+        margin-bottom: 109.92px;
+    }
+
+    /* PRODUCTS */
+    .products {
+        margin-top: 109.92px;
+        margin-bottom: 70.52px;
+    }
+
+    .products_title {
+        gap: 3.3px;
+    }
+
+    .product_cards {
+        margin-top: 72.74px;
+        margin-bottom: 32.48px;
+        gap: 15px;
+        /* на макете  отступ от 14 до 18. взял половину от десктопной версии*/
+    }
+
+    .card_img {
+        max-height: 420px;
+    }
+
+    .card_content {
+        gap: 0px;
+    }
+
+
+    .card_title {
+        margin-bottom: 12.65px;
+    }
+
+    .card_text {
+        margin-bottom: 18px;
+    }
+
+    .rectangle_button {
+        width: 212px;
+        height: 48px;
+        border: 1px solid #FF6A6A;
+    }
+
+    .rectangle_button a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+    }
 }
