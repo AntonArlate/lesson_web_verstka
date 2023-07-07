@@ -1,0 +1,37 @@
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.title {
+    color: $site_color_text;
+}
+
+.nav {
+    display: flex;
+    gap: $gutter * 2;
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.content {
+    display: flex;
+    gap: $gutter * 2;
+
+    &__item {
+        flex: 1 1 auto;
+        max-width: $site_with / 4;
+        height: 200px;
+        border: $border;
+    }
+}
