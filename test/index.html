@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="import" href="cards.html">
+
+</head>
+
+<body>
+
+    <div class="card" data-title="Название товара 1" data-image="image1.jpg" data-price="100"
+        data-description="Описание товара 1">aaa</div>
+
+    <div class="card" data-title="Название товара 2" data-image="image2.jpg" data-price="200"
+        data-description="Описание товара 2">sss</div>
+
+    <div class="card" data-title="Название товара 3" data-image="image3.jpg" data-price="300"
+        data-description="Описание товара 3">ddd</div>
+
+    <div class="contextual-selection">
+        <script>
+            // Получаем все элементы с классом `.card`
+
+            const cards = document.querySelectorAll('.card');
+
+            // const cards = document.querySelectorAll('link[rel="import"]')[0].import.querySelectorAll('.card');
+            // вариант не работает. Жду возможного блока в обучении
+            // как я понимаю мы сдесь получаем все линки с импортом в виде списка. Берём нулевой индекс. Далее должны из него выбрать все карточки. Но что делает .import. в вызове функции? Как посмотереть что у нас попало в константу?
+
+            // [gender="men"] возле названия класса если будем выбирать по атрибуту
+
+            // Получаем контейнер для контекстной подборки
+            const selectionContainer = document.querySelector('.contextual-selection');
+
+            // переменная для счётчика
+            let count = 0;
+
+            // Итерируемся по всем карточкам товаров и создаем новый элемент для каждой из них
+            cards.forEach(card => {
+
+                // if (count < 3) {
+                // запускаем счётчик
+
+                // Создаем новый элемент для карточки товара
+                const newCard = document.createElement('div');
+                newCard.classList.add('card');
+
+                // Получаем данные о товаре из атрибутов `data-*` элемента `.card`
+                const title = card.getAttribute('data-title');
+                const image = card.getAttribute('data-image');
+                const description = card.getAttribute('data-description');
+                const price = card.getAttribute('data-price');
+
+                // Создаем HTML-разметку для карточки товара
+                newCard.innerHTML = `
+        <h2 class="card-title">${title}</h2>
+        <div class="card-image" style="background-image: url('${image}')"></div>
+        <p class="card-description">${description}</p>
+        <p class="card-price">Цена: ${price} руб.</p>
+      `;
+
+                // Отображаем элемент карточки товара
+                newCard.style.display = 'block';
+
+                // Добавляем новый элемент к контейнеру для контекстной подборки
+                selectionContainer.appendChild(newCard);
+
+                // Увеличиваем и закрываем счетчик
+                //     count++;
+                //   }
+
+            });
+        </script>
+    </div>
+</body>
+
+</html>
