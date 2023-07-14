@@ -3,39 +3,7 @@
 
 @import "../styles/header.scss";
 
-.breadcrumb {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #F8F3F4;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .page-title {
-        color: #F16D7F;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    &_links a {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: light;
-        line-height: normal;
-
-        &:link,
-        &:visited {
-            color: #636363;
-        }
-
-        &:last-child {
-            color: #F16D7F;
-            font-weight: bold;
-        }
-    }
-}
+@import "../styles/breadcrumb.scss";
 
 .image-side {
     height: 777px;

@@ -16,6 +16,7 @@
   position: relative;
   z-index: 1;
   padding-top: 72.64px;
+  padding-bottom: 128px;
 }
 .subscribe_bg_filling {
   position: absolute;
@@ -91,7 +92,7 @@
 .subscribe_form_text h2 {
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: normal;
   line-height: 167.2%;
 }
 .subscribe_form_field {
