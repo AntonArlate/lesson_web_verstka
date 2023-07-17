@@ -231,6 +231,12 @@ body {
   height: 44px;
   border: 0.5px #A4A4A4 solid;
 }
+.registration__left .registration__form .field::-moz-placeholder {
+  padding-left: 16.73px;
+}
+.registration__left .registration__form .field::placeholder {
+  padding-left: 16.73px;
+}
 .registration__left .registration__form .gender-choice {
   display: flex;
   gap: 20px;
@@ -267,6 +273,9 @@ body {
   text-align: center;
   border: none;
   max-width: 167px;
+}
+.registration__left .registration__form .button:hover {
+  cursor: pointer;
 }
 .registration__left .registration__form .button svg {
   fill: #fff;
