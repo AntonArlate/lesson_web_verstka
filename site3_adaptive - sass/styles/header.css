@@ -9,11 +9,6 @@
     transform-origin: 100% 0;
   }
 }
-.center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
-}
-
 .header {
   background: #222;
   display: flex;
