@@ -34,3 +34,10 @@
 .breadcrumb_links a:link, .breadcrumb_links a:visited {
   color: #636363;
 }
+
+@media (max-width: 1024px) {
+  .breadcrumb {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

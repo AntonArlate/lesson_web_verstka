@@ -277,16 +277,11 @@
                         font-style: normal;
                         font-weight: 300;
                         line-height: normal;
-
                     }
-
                 }
             }
-
-
         }
     }
-
 }
 
 @import "../styles/subscribe.scss";
@@ -296,3 +291,40 @@
 }
 
 @import "../styles/footter.scss";
+
+@media (max-width: 1024px) {
+    .cart {
+        flex-direction: column;
+        padding-top: 59px;
+        padding-bottom: 128px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &__left {
+            &__buttons {
+                margin-top: 62px;
+                gap: 48px;
+                justify-content: center;
+                margin-bottom: 64px;
+            }
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            gap: 15px;
+            align-items: center;
+            padding-top: 0;
+
+            .shipping-adress {
+                flex: 1;
+            }
+
+            .total-price {
+                flex: 1;
+                margin-top: 0;
+            }
+        }
+    }
+}

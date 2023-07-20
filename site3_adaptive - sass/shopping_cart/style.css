@@ -20,6 +20,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -35,11 +39,6 @@ body {
     transform-origin: 100% 0;
   }
 }
-.center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
-}
-
 .header {
   background: #222;
   display: flex;
@@ -108,6 +107,16 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.header_right .menu-content .menu_close_button {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 16px;
+  right: 17px;
+}
+.header_right .menu-content .menu_close_button:hover {
+  cursor: pointer;
 }
 .header_right_menu-toggle {
   display: none;
@@ -208,6 +217,12 @@ body {
   color: #636363;
 }
 
+@media (max-width: 1024px) {
+  .breadcrumb {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 .cart {
   display: flex;
   justify-content: space-between;
@@ -440,11 +455,6 @@ body {
   line-height: normal;
 }
 
-.center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
-}
-
 .subscribe {
   display: flex;
   justify-content: space-between;
@@ -521,7 +531,6 @@ body {
 .subscribe_form_text {
   color: #222224;
   text-align: center;
-  width: 557px;
   margin-bottom: 32px;
 }
 .subscribe_form_text h1 {
@@ -613,17 +622,12 @@ body {
   .subscribe_info {
     min-width: auto;
   }
-  .subscribe_field input[type=email] {
+  .subscribe_form_field input[type=email] {
     width: auto;
   }
 }
 .subscribe {
   background-image: url("../img/subscibe_bg.png");
-}
-
-.center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
 }
 
 .footter {
@@ -679,5 +683,35 @@ body {
     display: flex;
     width: 148px;
     justify-content: space-between;
+  }
+}
+@media (max-width: 1024px) {
+  .cart {
+    flex-direction: column;
+    padding-top: 59px;
+    padding-bottom: 128px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .cart__left__buttons {
+    margin-top: 62px;
+    gap: 48px;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  .cart__right {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 15px;
+    align-items: center;
+    padding-top: 0;
+  }
+  .cart__right .shipping-adress {
+    flex: 1;
+  }
+  .cart__right .total-price {
+    flex: 1;
+    margin-top: 0;
   }
 }

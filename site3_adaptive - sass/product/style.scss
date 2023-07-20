@@ -43,7 +43,8 @@
 
 .product-description {
     .product-center {
-
+        margin-top: -65px;
+        // наложение на картинку
         display: flex;
         border: 1px solid #EAEAEA;
         align-items: center;
@@ -280,3 +281,43 @@
 
 @import "../styles/subscribe.scss";
 @import "../styles/footter.scss";
+
+// .products_cards-grid {
+//     display: flex;
+//     flex-wrap: nowrap;
+//     overflow-x: auto;
+//     margin: 0 -15px;
+
+//     &_card {
+//         width: 360px;
+//         margin: 0 15px;
+//     }
+// }
+// Интересный вариант если допустимо изменение размера карточек
+
+@media (max-width: 1024px) {
+    .image-side {
+        height: 624px;
+        padding-top: 30px;
+        padding-bottom: 29px;
+
+        .img-conteiner {
+            height: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .product-description {
+        .product-center {
+            margin-top: 0;
+        }
+    }
+
+    .products_cards-grid>*:nth-child(n+3) {
+        display: none;
+    }
+
+    // обращаемся ко всем дочерним элементам с номером 3 и больше
+
+}

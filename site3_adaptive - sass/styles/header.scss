@@ -96,6 +96,18 @@
                     }
                 }
             }
+
+            .menu_close_button {
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 16px;
+                right: 17px;
+            }
+
+            .menu_close_button:hover {
+                cursor: pointer;
+            }
         }
 
         &_menu-toggle {

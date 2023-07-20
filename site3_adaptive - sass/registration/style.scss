@@ -118,13 +118,19 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            list-style-type: none;
 
-            li {
-                padding-left: 20px;
-            }
+            // li {
+            //     padding-left: 20px;
+            // }
+            // li::marker {
+            //     content: url('../img/cheklist_marker.svg');
+            // }
+            // оставлю для примера проблемы. В данной реализации маркеры ставятся браузером за пределами блока.
 
-            li::marker {
+            li::before {
                 content: url('../img/cheklist_marker.svg');
+                padding-right: 20px;
             }
         }
     }
@@ -138,3 +144,18 @@
 }
 
 @import "../styles/footter.scss";
+
+@media (max-width: 1024px) {
+    .registration {
+        justify-content: center;
+        gap: 22px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 40px;
+
+        &__right {
+            font-size: 16px;
+            width: 354px;
+        }
+    }
+}

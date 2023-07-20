@@ -1,5 +1,3 @@
-@import "vars";
-
 @keyframes scale-up-ver-top {
     0% {
         transform: scaleY(.4);
@@ -16,23 +14,9 @@
     border: 1px solid #00af26;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "./styles/default.scss";
 
-a {
-    text-decoration: none;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-.center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
-}
+@import "./styles/center.scss";
 
 @import "./styles/header.scss";
 
@@ -641,7 +625,7 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
     .products {
         &_cards-grid {
             grid-template-columns: repeat(auto-fit, 100%);
