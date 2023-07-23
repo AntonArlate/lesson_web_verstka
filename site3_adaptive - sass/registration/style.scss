@@ -119,6 +119,7 @@
             flex-direction: column;
             align-items: flex-start;
             list-style-type: none;
+            gap: 16px;
 
             // li {
             //     padding-left: 20px;
@@ -156,6 +157,43 @@
         &__right {
             font-size: 16px;
             width: 354px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .registration {
+        flex-direction: column;
+        padding-top: 40.41px;
+        padding-bottom: 100.24px;
+        gap: 40px;
+
+        &__left {
+            width: auto;
+            max-width: 360px;
+
+            .registration__form {
+                .field {
+                    height: 45px;
+                }
+
+                .login-details-block {
+                    margin-top: 33.83px;
+                }
+            }
+        }
+
+        &__right {
+            width: 100%;
+            font-size: 16px;
+
+            &__title {
+                margin-bottom: 32.36px;
+            }
+
+            &__text {
+                margin-bottom: 22.5px;
+            }
         }
     }
 }

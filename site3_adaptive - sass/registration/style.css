@@ -182,12 +182,11 @@ html {
   }
 }
 .breadcrumb {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #F8F3F4;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 148px;
 }
 .breadcrumb .page-title {
   color: #F16D7F;
@@ -221,6 +220,13 @@ html {
   .breadcrumb {
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .breadcrumb {
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
   }
 }
 .registration {
@@ -321,6 +327,7 @@ html {
   flex-direction: column;
   align-items: flex-start;
   list-style-type: none;
+  gap: 16px;
 }
 .registration__right__list li::before {
   content: url("../img/cheklist_marker.svg");
@@ -568,5 +575,33 @@ html {
   .registration__right {
     font-size: 16px;
     width: 354px;
+  }
+}
+@media (max-width: 1024px) {
+  .registration {
+    flex-direction: column;
+    padding-top: 40.41px;
+    padding-bottom: 100.24px;
+    gap: 40px;
+  }
+  .registration__left {
+    width: auto;
+    max-width: 360px;
+  }
+  .registration__left .registration__form .field {
+    height: 45px;
+  }
+  .registration__left .registration__form .login-details-block {
+    margin-top: 33.83px;
+  }
+  .registration__right {
+    width: 100%;
+    font-size: 16px;
+  }
+  .registration__right__title {
+    margin-bottom: 32.36px;
+  }
+  .registration__right__text {
+    margin-bottom: 22.5px;
   }
 }

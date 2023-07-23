@@ -182,12 +182,11 @@ html {
   }
 }
 .breadcrumb {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #F8F3F4;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 148px;
 }
 .breadcrumb .page-title {
   color: #F16D7F;
@@ -221,6 +220,13 @@ html {
   .breadcrumb {
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .breadcrumb {
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
   }
 }
 .cart {
@@ -287,6 +293,7 @@ html {
   color: #656565;
   font-size: 18px;
   font-weight: 400;
+  border: 1px solid #EAEAEA;
 }
 .cart__left__cards .cart-deffault-card .product_description .product_specification #number-input::-webkit-inner-spin-button, .cart__left__cards .cart-deffault-card .product_description .product_specification #number-input::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -713,5 +720,68 @@ html {
   .cart__right .total-price {
     flex: 1;
     margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .cart {
+    padding-top: 39px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 96px;
+  }
+  .cart__left__cards {
+    gap: 32px;
+  }
+  .cart__left__cards .cart-deffault-card {
+    height: 188px;
+  }
+  .cart__left__cards .cart-deffault-card .img-container {
+    width: 143.85px;
+  }
+  .cart__left__cards .cart-deffault-card .product_description {
+    width: 214.14px;
+    padding-top: 13.52px;
+    padding-left: 17.02px;
+    gap: 25.85px;
+  }
+  .cart__left__cards .cart-deffault-card .product_description .product_name {
+    max-width: 144px;
+    font-size: 16px;
+  }
+  .cart__left__cards .cart-deffault-card .product_description .product_specification {
+    font-size: 14px;
+  }
+  .cart__left__cards .cart-deffault-card .product_description .product_specification #number-input {
+    width: 24.2px;
+    height: 15.3px;
+    font-size: 10px;
+  }
+  .cart__left__cards .cart-deffault-card .close {
+    top: 17.2px;
+    right: 12.08px;
+  }
+  .cart__left__buttons {
+    margin-top: 30px;
+    margin-bottom: 48px;
+    gap: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .cart__left__buttons .button {
+    width: 175px;
+    height: 33px;
+  }
+  .cart__left__buttons .button a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .cart__right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+  }
+  .cart__right .shipping-adress {
+    width: 100%;
+    max-width: 360px;
   }
 }
